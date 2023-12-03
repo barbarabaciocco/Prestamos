@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Simulador de Préstamos Personales</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilos.css">
+    <script src="js/clase.prestamo.js"></script>
+    <script defer src="js/main.js"></script>
+</head>
+<body>
+    <h1>Simulador de Préstamos Personales</h1>
+    <div class="panel-cotizacion ">
+        <h2>¡Descubre tus opciones de préstamo!</h2>
+        <p>¡Simulá tu Préstamo Personal y comenzá hoy a cumplir tus metas!</p>
+
+        <label for="montoPrestamo">¿Cuánto dinero necesitas?</label>
+        <input type="number" id="montoPrestamo" placeholder="Ingresa el monto" required>
+        
+        <label for="plazoPago">¿En cuántos meses devolverás el préstamo?</label>
+        <input type="number" id="plazoPago" placeholder="Ingresa el plazo en meses"  value="12" min="12" max="96" step="12" required>
+        
+        <label for="tasaInteres">¿Cuál es el destino del dinero que solicitas?</label>
+        <select id="selectDestino">
+            <option disabled selected>Solicito el dinero para...</option>
+        </select>
+        
+        <button class="button-calcular" type="button">Calcular</button>
+    </div>
+</body>
+</html>
