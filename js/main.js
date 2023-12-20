@@ -49,6 +49,10 @@ function calcularPrestamo() {
     location.href = "cotizacion.html"
 }
 
-btnCalcular.addEventListener("click", ()=> calcularPrestamo())
+btnCalcular.addEventListener("click", ()=> {
+let tiempo = parseInt (Math.random()*10000)
+console.log(tiempo)
+setTimeout(()=> calcularPrestamo() , tiempo)
+})
 
 cargarDestinos()
