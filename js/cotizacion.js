@@ -21,8 +21,12 @@ function recuperarDeLS() {
 }
 
 btnContratar.addEventListener("click", ()=> {
-    divMensajeFinal.classList.add("transition-div-show")
-    localStorage.clear()
+
+    Swal.fire({
+        title: "¡Listo!",
+        text: "Nos pondremos en contacto a la brevedad. ¡Gracias por confiar en nosotros!",
+        icon: "success"
+    });
 })
 
 
